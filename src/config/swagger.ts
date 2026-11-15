@@ -4,13 +4,10 @@ const options: swaggerJsdoc.Options = {
     definition: {
         openapi: '3.0.0',
         info: {
-            title: 'Chat Backend API',
+            title: 'Rippl API',
             version: '1.0.0',
             description: 'Real-time chat application backend with REST API and WebSocket support',
-            contact: {
-                name: 'API Support',
-                email: 'support@chatapp.com'
-            }
+            
         },
         servers: [
             {
