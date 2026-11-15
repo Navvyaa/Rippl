@@ -1,4 +1,4 @@
-# 💬 Real-Time Chat Application Backend
+# 💬 Rippl - Real-Time Chat Backend
 
 A real-time chat backend built with Node.js, Express, Socket.IO, MongoDB, and TypeScript featuring JWT authentication, message delivery receipts, typing indicators, and comprehensive API documentation.
 
@@ -10,8 +10,8 @@ A real-time chat backend built with Node.js, Express, Socket.IO, MongoDB, and Ty
 
 ## 🌐 Live Demo with Interactive Documentation
 
-- **REST API (Swagger)**: https://chatbe-owor.onrender.com/api-docs
-- **WebSocket API (AsyncAPI)**: https://chatbe-owor.onrender.com/socket-docs
+- **REST API (Swagger)**: https://rippl-xnw7.onrender.com/api-docs
+- **WebSocket API (AsyncAPI)**: https://rippl-xnw7.onrender.com/socket-docs
 > The demo runs on Render's free tier, which sleeps after inactivity. The first request can take around a minute while it wakes up.
 
 ## 📌 Highlights
@@ -108,8 +108,8 @@ User                    Conversation              Message
 ### Option A: Docker Compose (easiest)
  
 ```bash
-git clone https://github.com/Navvyaa/ChatBE.git
-cd ChatBE
+git clone https://github.com/Navvyaa/Rippl.git
+cd Rippl
  
 cp .env.example .env
 # Edit .env and set JWT_SECRET and JWT_REFRESH_SECRET
@@ -122,8 +122,8 @@ The API is at http://localhost:5000, with docs at http://localhost:5000/api-docs
 ### Option B: Run directly
  
 ```bash
-git clone https://github.com/Navvyaa/ChatBE.git
-cd ChatBE
+git clone https://github.com/Navvyaa/Rippl.git
+cd Rippl
  
 npm install
  
@@ -136,32 +136,14 @@ npm run dev
  
 ### Environment Variables
  
-```env
-# Database
-MONGO_URI=mongodb://localhost:27017/chatApp
- 
-# Server
-PORT=5000
-NODE_ENV=development
- 
-# JWT secrets
-JWT_SECRET=your_super_secret_jwt_key_here
-JWT_REFRESH_SECRET=your_super_secret_refresh_key_here
- 
-# API URL (for documentation)
-API_URL=http://localhost:5000
- 
-# WebSocket URL
-WS_HOST=localhost:5000
- 
-# CORS (comma-separated)
-ALLOWED_ORIGINS=http://localhost:3000,http://localhost:5173
- 
-# Optional: enables the Redis adapter for multi-instance deployments.
-# Leave unset to run as a single instance.
-# REDIS_URL=redis://localhost:6379
+Refer to [`.env.example`](./.env.example) for the complete list of required variables and their descriptions.
+
+Create your own `.env` file using the example as a template:
+
+```bash
+cp .env.example .env
 ```
- 
+
 ### Build for Production
  
 ```bash
